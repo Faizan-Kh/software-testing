@@ -1,15 +1,13 @@
 package com.se.tests.smoke;
 
-import com.se.TestBase;
 import com.se.config.ConfigHelper;
 import com.se.config.Constants;
 import com.se.utils.UtilsSet;
-import com.se.utils.UtilsSet.*;
 import org.testng.annotations.Test;
 
-public class VerifyTestResult extends TestBase {
+public class VerifyClassAnalytics {
     @Test
-    public void verifyTestResult() {
+    public void verifyClassAnalytics() {
         UtilsSet.launchBrowserAndUrl(ConfigHelper.getInstance().getSubjectExpertUrl(), Constants.Tags.BY_BODY);
         UtilsSet.clickOnElement(Constants.WebDashboard.BY_DASHBOARD_LOGIN_BUTTON);
 
@@ -21,7 +19,7 @@ public class VerifyTestResult extends TestBase {
 
 //        Go to Tests URL
         UtilsSet.goToUrl(ConfigHelper.getInstance().getViewExamsUrl());
-        UtilsSet.clickOnElement(Constants.ViewExams.BY_EXAM_CONDUCTED_BUTTON);
-
+        UtilsSet.clickOnElement(Constants.ViewExams.BY_VIEW_ANALYTICS_BUTTON);
     }
+
 }

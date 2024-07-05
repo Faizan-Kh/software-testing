@@ -61,6 +61,11 @@ public class Constants {
     public static class WebDashboard {
         public static final By BY_DASHBOARD_LOGIN_BUTTON = By.xpath("//*[@id=\"header\"]/div[2]/div/div/div[2]/div[1]/span[1]");
     }
+
+    public static class ViewExams {
+        public static final By BY_EXAM_CONDUCTED_BUTTON = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr[1]/td[2]/a");
+        public static final By BY_VIEW_ANALYTICS_BUTTON = By.xpath("//*[@id=\"examsummary\"]/div/div[1]/a[4]");
+    }
     public static class Login {
 
         public static final By BY_USERNAME_FIELD = By.id("UserName");
